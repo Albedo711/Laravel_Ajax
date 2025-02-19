@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <h2>Welcome, <span id="username"></span></h2>
+    <h2>Welcome, {{$userName}}</h2>
     <button id="btn_logout">Logout</button>
 
     <script>

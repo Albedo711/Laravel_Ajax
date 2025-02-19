@@ -20,7 +20,8 @@ class AuthController extends Controller
 
     public function showDashboard()
     {
-        return view('dashboard');
+        $userName = auth()->user()->name;
+        return view('dashboard', compact('userName'));
     }
 
     public function register(Request $request)
